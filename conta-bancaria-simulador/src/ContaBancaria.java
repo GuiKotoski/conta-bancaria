@@ -19,6 +19,16 @@ public abstract class ContaBancaria {
         }
     }
 
+    // Método para sacar dinheiro da conta
+    public void sacar(double valor) {
+        if (valor > 0 && valor <= saldo) {
+            saldo -= valor;
+            System.out.println("Saque realizado com sucesso. Novo saldo: " + saldo);
+        } else {
+            System.out.println("Saque inválido. Verifique o valor e o saldo disponível.");
+        }
+    }
+
     // Método para verificar o saldo atual
     public void consultarSaldo() {
         System.out.println("Saldo atual: " + saldo);    
