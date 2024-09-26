@@ -2,9 +2,7 @@ import java.util.Scanner;
 
 public class SimuladorBanco {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);    
-
-        // Criação da conta bancária
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Digite o nome do titular da conta: ");
         String titular = scanner.nextLine();
         System.out.print("Digite o saldo inicial: ");
@@ -13,7 +11,6 @@ public class SimuladorBanco {
 
         int opcao;
 
-        // Menu de opções
         do {
             System.out.println("\nEscolha uma operação:");
             System.out.println("1. Consultar Saldo");
@@ -27,7 +24,7 @@ public class SimuladorBanco {
                 case 1:
                     conta.consultarSaldo();
                     break;
-                case 2: 
+                case 2:
                     System.out.print("Digite o valor para depositar: ");
                     double valorDeposito = scanner.nextDouble();
                     conta.depositar(valorDeposito);

@@ -1,4 +1,4 @@
-public abstract class ContaBancaria {
+class ContaBancaria {
     // Atributos da conta bancária
     private String titular;
     private double saldo;
